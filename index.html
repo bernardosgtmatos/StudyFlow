@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>StudyFlow - Controle de Estudos</title>
+    <!-- TailwindCSS CDN + Google Fonts para um toque extra -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <style>
+        /* Override sutil da fonte padrão */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Animações suaves para o cronômetro */
+        .timer-number {
+            font-variant-numeric: tabular-nums;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-indigo-50 min-h-screen">
+
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <!-- Cabeçalho -->
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                📚 StudyFlow
+            </h1>
+            <p class="text-gray-500 mt-2">Controle suas horas e evolua com consistência</p>
+        </header>
+
+        <!-- Área principal: Cronômetro + Relatório Rápido -->
+        <div class="grid md:grid-cols-2 gap-6">
+            
+            <!-- Card do Cronômetro -->
+            <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-6 border border-white/50">
+                <h2 class="text-xl font-semibold text-gray-700 mb-4 flex items-center gap-2">
+                    <span class="text-2xl">⏱️</span> Sessão atual
+                </h2>
+                
+                <!-- Display do tempo -->
+                <div class="text-center py-6">
+                    <div class="text-6xl font-mono font-bold text-indigo-700 timer-number" id="timerDisplay">
+                        00:00:00
+                    </div>
+                    <p class="text-sm text-gray-400 mt-2">Horas : Minutos : Segundos</p>
+                </div>
+
+                <!-- Contador de Pausas da sessão -->
+                <div class="flex justify-between items-center mb-6 bg-gray-50 p-3 rounded-xl">
+                    <span class="text-gray-600 font-medium">⏸️ Pausas nesta sessão:</span>
+                    <span class="text-2xl font-bold text-indigo-600" id="pauseCountDisplay">0</span>
+                </div>
+
+                <!-- Botões de ação -->
+                <div class="grid grid-cols-3 gap-3">
+                    <button id="startBtn" class="py-3 px-4 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-xl transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2">
+                        ▶ Iniciar
+                    </button>
+                    <button id="pauseBtn" class="py-3 px-4 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-xl transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2" disabled>
+                        ⏸ Pausa
+                    </button>
+                    <button id="finishBtn" class="py-3 px-4 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2" disabled>
+                        ✅ Finalizar
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card do Relatório do Dia (dinâmico) -->
+            <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-6 border border-white/50">
+                <h2 class="text-xl font-semibold text-gray-700 mb-4 flex items-center gap-2">
+                    <span class="text-2xl">📊</span> Relatório de hoje
+                </h2>
+                <div id="dailyReportContainer" class="space-y-3">
+                    <!-- Será preenchido dinamicamente pelo JS -->
+                    <div class="animate-pulse flex space-x-2">
+                        <div class="h-4 bg-gray-200 rounded w-3/4"></div>
+                    </div>
+                    <p class="text-gray-400 text-sm">Carregando relatório...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Histórico -->
+        <div class="mt-8 bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-6 border border-white/50">
+            <div class="flex justify-between items-center mb-4 flex-wrap gap-2">
+                <h2 class="text-xl font-semibold text-gray-700 flex items-center gap-2">
+                    <span class="text-2xl">📜</span> Histórico de estudos
+                </h2>
+                <button id="clearHistoryBtn" class="text-sm bg-red-50 hover:bg-red-100 text-red-600 px-3 py-1 rounded-lg transition-colors">
+                    🗑️ Limpar histórico
+                </button>
+            </div>
+            <div id="historyList" class="max-h-96 overflow-y-auto space-y-2">
+                <!-- Histórico será injetado aqui -->
+                <div class="text-center text-gray-400 py-8">
+                    Nenhum registro encontrado. Finalize uma sessão para começar!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+/* style.css - Apenas para refinamentos visuais */
+/* O Tailwind já cuida da maioria, mas adiciono uma animação suave pro cronômetro */
+@keyframes subtlePulse {
+    0% { text-shadow: 0 0 0px rgba(79, 70, 229, 0); }
+    100% { text-shadow: 0 0 3px rgba(79, 70, 229, 0.3); }
+}
+
+.timer-number {
+    transition: all 0.1s ease;
+}
+
+button:active {
+    transform: scale(0.97);
+}
