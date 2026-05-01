@@ -1,6 +1,3 @@
-Aqui está o `README.md` estilizado para o seu repositório **StudyFlow**, com explicações claras sobre as branches e instruções de uso.
-
-```markdown
 # 📚 StudyFlow
 
 **StudyFlow** é um aplicativo web leve e organizado para auxiliar nos seus estudos, permitindo gerenciar tarefas, anotações ou cronogramas de forma intuitiva. O projeto está estruturado em três versões principais, cada uma com seu propósito específico.
@@ -13,11 +10,58 @@ Aqui está o `README.md` estilizado para o seu repositório **StudyFlow**, com e
 
 O repositório contém três branches que representam diferentes formas de uso e distribuição do aplicativo:
 
-| Branch | Versão | Descrição | Como usar |
-|--------|--------|-----------|------------|
-| `main` | Modular (HTML/CSS/JS separados) | Código fonte organizado em arquivos distintos. Ideal para desenvolvimento, manutenção ou estudo do código. | 1. Clone o repositório<br>2. Abra o arquivo `index.html` no navegador<br>*Requer que os arquivos `.css` e `.js` estejam no mesmo diretório.* |
-| `versão-1.0.1-html-com-js-e-css-imbutido` | Autocontido (HTML único) | Tudo em um único arquivo HTML (estilo e script internos, não inline). Perfeito para execução local sem preocupações com arquivos externos. | 1. Baixe apenas o arquivo `index.html`<br>2. Abra com qualquer navegador moderno<br>*Não depende de estrutura de pastas.* |
-| `versão-PWA-js-e-css-inline` | Progressive Web App | Versão com funcionalidade PWA: estilo e JavaScript **inline** no HTML + manifest e service worker. Pode ser instalada como app no dispositivo. | 1. Hospede o arquivo em um servidor HTTPS (ou use localhost)<br>2. Acesse via navegador compatível<br>3. Clique em "Instalar aplicativo" (ou "Adicionar à tela inicial") |
+---
+
+### 📌 Branch `main`
+
+**Versão:** Modular (HTML/CSS/JS separados)
+
+**Funcionamento:**  
+Código fonte organizado em arquivos distintos. Ideal para desenvolvimento, manutenção ou estudo do código.
+
+**Como usar:**  
+1. Clone o repositório:  
+   `git clone https://github.com/seu-usuario/StudyFlow.git`  
+2. Acesse a branch main:  
+   `git checkout main`  
+3. Abra o arquivo `index.html` no navegador  
+
+> ⚠️ **Atenção:** Requer que os arquivos `.css` e `.js` estejam no mesmo diretório do `index.html`.
+
+---
+
+### 📌 Branch `versão-1.0.1-html-com-js-e-css-imbutido`
+
+**Versão:** Autocontido (HTML único)
+
+**Funcionamento:**  
+Tudo em um único arquivo HTML (estilo e script internos, não inline). Perfeito para execução local sem preocupações com arquivos externos.
+
+**Como usar:**  
+1. Acesse a branch:  
+   `git checkout versão-1.0.1-html-com-js-e-css-imbutido`  
+2. Baixe apenas o arquivo `index.html`  
+3. Abra com qualquer navegador moderno (Chrome, Firefox, Edge, etc.)  
+
+> ✅ **Vantagem:** Não depende de estrutura de pastas, funciona direto.
+
+---
+
+### 📌 Branch `versão-PWA-js-e-css-inline`
+
+**Versão:** Progressive Web App (PWA)
+
+**Funcionamento:**  
+Versão com funcionalidade PWA: estilo e JavaScript **inline** no HTML + manifest e service worker. Pode ser instalada como app no dispositivo.
+
+**Como usar:**  
+1. Acesse a branch:  
+   `git checkout versão-PWA-js-e-css-inline`  
+2. Hospede os arquivos em um servidor HTTPS (ou use localhost para testes)  
+3. Acesse via navegador compatível (Chrome, Edge, Safari, etc.)  
+4. Clique em "Instalar aplicativo" (ou "Adicionar à tela inicial")  
+
+> 📱 **Resultado:** O app funciona offline e pode ser usado como um aplicativo nativo.
 
 ---
 
