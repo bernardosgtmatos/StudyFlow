@@ -2,6 +2,8 @@
 
 **StudyFlow** é um aplicativo web leve e organizado para auxiliar nos seus estudos, permitindo gerenciar tarefas, anotações ou cronogramas de forma intuitiva. O projeto está estruturado em três versões principais, cada uma com seu propósito específico.
 
+## Wep app : https://69f3ed2cb1b3260009273220--cronometrodeestudospwa.netlify.app/
+
 ---
 
 ## 🌿 Branches e Versões
