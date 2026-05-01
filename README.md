@@ -2,15 +2,12 @@
 
 **StudyFlow** é um aplicativo web leve e organizado para auxiliar nos seus estudos, permitindo gerenciar tarefas, anotações ou cronogramas de forma intuitiva. O projeto está estruturado em três versões principais, cada uma com seu propósito específico.
 
-![Status](https://img.shields.io/badge/status-ativo-brightgreen) ![Licença](https://img.shields.io/badge/licença-MIT-blue)
-
 ---
 
 ## 🌿 Branches e Versões
 
 O repositório contém três branches que representam diferentes formas de uso e distribuição do aplicativo:
 
----
 
 ### 📌 Branch `main`
 
@@ -108,8 +105,7 @@ versão-1.0.1-html-com-js-e-css-imbutido/
 
 versão-PWA-js-e-css-inline/
 ├── index.html   (estilos e scripts inline)
-├── manifest.json
-└── sw.js       (service worker)
+└── manifest.json
 ```
 
 ---
