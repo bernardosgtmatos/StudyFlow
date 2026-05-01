@@ -84,6 +84,7 @@ git checkout versão-1.0.1-html-com-js-e-css-imbutido
 ```bash
 git checkout versão-PWA-js-e-css-inline
 # Hospede o conteúdo em um servidor local ou remoto (ex: npx http-server .)
+Caso deseje testar o app ja hosteado por um servidor ---> https://69f3ed2cb1b3260009273220--cronometrodeestudospwa.netlify.app/
 ```
 - ✅ Suporte a instalação, ícone na tela inicial, modo offline básico
 - ❌ Requer servir via HTTPS (ou localhost) para registrar o Service Worker
