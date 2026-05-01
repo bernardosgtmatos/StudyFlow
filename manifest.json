@@ -1,25 +1,37 @@
 {
+  "id": "/",
   "name": "StudyFlow",
   "short_name": "StudyFlow",
+  "description": "Controle suas horas de estudo",
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#4f46e5",
   "background_color": "#f8fafc",
+  "orientation": "portrait",
   "icons": [
     {
-      "src": "https://emojicdn.elk.sh/📚",
-      "sizes": "any",
-      "type": "image/png"
+      "src": "https://emojicdn.elk.sh/📚?size=192",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "https://emojicdn.elk.sh/📚?size=192",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable"
     },
     {
       "src": "https://emojicdn.elk.sh/📚?size=512",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://emojicdn.elk.sh/📚?size=512",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
