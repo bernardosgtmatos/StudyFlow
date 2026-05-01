@@ -25,7 +25,6 @@ Código fonte organizado em arquivos distintos. Ideal para desenvolvimento, manu
 
 > ⚠️ **Atenção:** Requer que os arquivos `.css` e `.js` estejam no mesmo diretório do `index.html`.
 
----
 
 ### 📌 Branch `versão-1.0.1-html-com-js-e-css-imbutido`
 
@@ -42,7 +41,6 @@ Tudo em um único arquivo HTML (estilo e script internos, não inline). Perfeito
 
 > ✅ **Vantagem:** Não depende de estrutura de pastas, funciona direto.
 
----
 
 ### 📌 Branch `versão-PWA-js-e-css-inline`
 
