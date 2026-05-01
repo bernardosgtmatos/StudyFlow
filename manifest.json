@@ -1,0 +1,25 @@
+{
+  "name": "StudyFlow",
+  "short_name": "StudyFlow",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#4f46e5",
+  "background_color": "#f8fafc",
+  "icons": [
+    {
+      "src": "https://emojicdn.elk.sh/📚",
+      "sizes": "any",
+      "type": "image/png"
+    },
+    {
+      "src": "https://emojicdn.elk.sh/📚?size=192",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://emojicdn.elk.sh/📚?size=512",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
